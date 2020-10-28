@@ -1,7 +1,7 @@
 import math
 
 def main():
-    goal = input("Please enter what you find to find: ")
+    goal = input("Please enter the variable to isolate:\n(W, V, A, R)\n\n:> ")
     if goal == "W":
         find_w()
     elif goal == "V":
@@ -12,11 +12,11 @@ def main():
         find_r()
 
 def find_w():
-    print("please choose a set of known variables:")
+    print("please choose a set of known variables:\n")
     print("1: V and R")
     print("2: R and A")
     print("3: A and V")
-    known = float(input("choose:"))
+    known = float(input("\n\n:> "))
     if known == 1:
         V = float(input("Enter V: "))
         R = float(input("Enter R: "))
@@ -41,11 +41,11 @@ def find_w():
 
 
 def find_v():
-    print("please choose a set of known variables:")
+    print("please choose a set of known variables:\n")
     print("1: R and A")
     print("2: A and W")
     print("3: W and R")
-    known = float(input("choose:"))
+    known = float(input("\n\n:> "))
     if known == 1:
         R = float(input("Enter R: "))
         A = float(input("Enter A: "))
@@ -70,11 +70,11 @@ def find_v():
 
 
 def find_a():
-    print("please choose a set of known variables:")
+    print("please choose a set of known variables:\n")
     print("1: W and R")
     print("2: W and V")
     print("3: V and R")
-    known = float(input("choose:"))
+    known = float(input("\n\n:> "))
     if known == 1:
         W = float(input("Enter W: "))
         R = float(input("Enter R: "))
@@ -99,11 +99,11 @@ def find_a():
 
 
 def find_r():
-    print("please choose a set of known variables:")
+    print("please choose a set of known variables:\n")
     print("1: V and A")
     print("2: V and W")
     print("3: W and A")
-    known = float(input("choose:"))
+    known = float(input("\n\n:> "))
     if known == 1:
         V = float(input("Enter V: "))
         A = float(input("Enter A: "))
